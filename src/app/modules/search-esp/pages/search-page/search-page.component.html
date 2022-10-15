@@ -1,0 +1,105 @@
+<div class="col-xl-9 px-0">
+<h1 class="h3 mb-2 mt-2">Nutrilogo Monterrey</h1>
+<div class="d-sm-none d-md-flex"></div>
+<div id="search-content">
+    <ul class="list-unstyled search-list" >
+        <li class="has-cal-active" *ngFor="let especialista of especialistas" >
+            <div class="card card-shadow-1 mb-1">
+                <div class="card-body p-0">
+                    <div class="row mx-0 flex-column flex-md-row">
+                        <div class="col-lg-6 result-column p-2">
+                            <div class="dp-doctor-card dp-doctor-card-md mb-1">
+                                <div class="media">
+                                    <div class="pr-1">
+                                        <a >
+                                            <span class="mb-1 avatar avatar-circle no-background">
+                                                <img alt="Medico demo" src="/assets/images/user.png" [routerLink]="['/detalle',especialista.id]">
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        
+                                        <div class="mb-0-5 d-flex align-items-center">
+                                            <h5 class="badge bg-warning-light m-0" >
+                                                Destacado 
+                                            </h5>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="h4 mb-0 flex-wrap">
+                                                <a class="text-body">
+                                                    <span>
+                                                         {{especialista.nombre}}
+                                                    </span>
+                                                </a>
+                                            </h3>
+                                            <div class="ml-1">
+                                                <div class="d-flex">
+                                                    <div data-v-7f7177f2 class="button-save-doctor d-flex align-items-center p-0">
+                                                        <span class="">Guardar</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="h5 font-weight-normal mb-0">
+                                            <span>{{especialista.especialidad}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--direccion y precio-->
+                            <div class="doctor-card-address">
+                                <div class="mt-1-5">
+                                    <div class="d-flex align-items-top">
+                                        <div class="pr-1"></div>
+                                        <div class="overflow-hidden">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <span class="text-truncate">{{especialista.consultorio}}</span>
+                                                <span class="ml-0-5 mr-0-5">•</span>
+                                                <a class="text-muted" href="#">
+                                                    <u>Mapa</u>
+                                                </a>
+                                            </p>
+                                            <p class="m-0 text-truncate text-muted font-weight-bold address-details">
+                                                Consultorio privado
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mt-1">
+                                        <div class="pr-1"></div>
+                                        <p class="m-0 pr-0-5 text-truncate">
+                                            Primera visita con el nutriologo
+                                        </p>
+                                        <p class="m-0 text-nowrap">
+                                            <span>•</span>
+                                            $800
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                              <!--direccion y precio-->
+                        </div>
+                        <!--calendario-->
+                        <div class="col-lg-6 pr-2">
+                            <div class="">
+                                <div>
+                                    <div class="bg-white pl-3 pr-3 mb-2 mt-2 dp-calendar dp-calendar-color-primary-light dp-calendar-available">
+                                        <div class="dp-carousel">
+                                            <button type="button" class="dp-carousel-nav dp-carousel-nav-prev circle circle-gray-600" disabled>
+                                              <i class="svg-icon svg-icon-caret-left svg-icon-size-16 svg-icon-color-white"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--calendario-->
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>

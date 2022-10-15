@@ -1,0 +1,132 @@
+<div class="row">
+    <div class="optimize-hiding-element">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="pt-0 pt-sm-4 pr-0 pr-sm-5">
+                    <div class="mb-4">
+                        <div class="row">
+                            <div class="col-md-12 d-flex flex-column">
+                                <h1 class="h2 mb-0">
+									{{titulo}}
+								</h1>
+                                <div class="d-flex align-items-center">
+                                    <h5 class="m-0">
+                                       <!-- <a href="#">Registrarme como paciente</a>-->
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form (ngSubmit)="create()" class="register-form">
+                        <div class="form-group">
+                            <label class="control-label"  for="especialidad">Especialidad *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. Nutriologo" [(ngModel)]="especialista.especialidad" name="especialidad">
+                                <!--<select class="form-control register-form__select">
+                                    <option>Elegir</option>
+                                    <option value="1">Acupuntor</option>
+                                    <option value="2">Nutricion</option>
+                                    <option value="3">Cardiologia</option>
+                                </select>-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="nombre">Nombre Completo *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. Gabriela Marquez Sanchez"  [(ngModel)]="especialista.nombre" name="nombre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="cedula">Cedula Profesional *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. 10897623"  [(ngModel)]="especialista.cedula" name="cedula" maxlength="8">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="celular">Número de contacto Celular o Móvil *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. 8178676512"  [(ngModel)]="especialista.celular" name="celular" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="control-label">Correo Electronico *</label>
+                            <div>
+                                <input type="email" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. juanperez@gmail.com"  [(ngModel)]="especialista.email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="ciudad">Ciudad *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. Monterrey Nuevo Leon"  [(ngModel)]="especialista.ciudad" name="ciudad">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="consultorio">Direccion Consultorio *</label>
+                            <div>
+                                <input type="text" class="form-control form-control-lg inspectletIgnore" required="required" placeholder="Ej. Avenida Valler oriente #510 "  [(ngModel)]="especialista.consultorio" name="consultorio">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary btn-block mt-2 mb-2"  role="button">Enviar</button>
+                        <div class="d-flex justify-content-center mb-2">
+                            <p class="text-placeholder">* Campo obligatorio</p>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 register-page__xs-gray" >
+                <div class="pt-2 pt-sm-4 pb-4 pb-sm-0 pl-0 pl-sm-3 text-muted">
+                    <div class="media">
+                        <div class="pr-1">
+                            <div class="circle circle-size-lg circle-primary-light">
+                                <img src="/assets/images/star.png">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4><b>Construye y fortalece tu reputación profesional.</b></h4>
+                            <p>Ofrece una experiencia de primera calidad y posicio tu presencia digital.</p>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <div class="pr-1">
+                            <div class="circle circle-size-lg circle-primary-light">
+                                <img src="/assets/images/calendar.png">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4><b>Organiza tu horario laboral.</b></h4>
+                            <p>Elige los espacios del día para la atención de tus pacientes, de acuerdo con la disponibilidad de tu agenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <div class="pr-1">
+                            <div class="circle circle-size-lg circle-primary-light">
+                                <img src="/assets/images/check.png">
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4><b>Despreocúpate de las cancelaciones. </b></h4>
+                            <p>En caso de que alguno de tus pacientes no asista, inmediatamente otro podrá pedir cita contigo; así tu agenda estará disponible en todo momento.</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="pr-1">
+                            <div class="circle circle-size-lg circle-primary-light">
+                                <img src="/assets/images/notify.png">
+                           
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4><b>Recibe notificaciones.  </b></h4>
+                            <p>Te informaremos por mensaje de texto, correo electrónico y desde nuestra plataforma, cuando un paciente realice un pago, confirme o cancele una cita médica.</p>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

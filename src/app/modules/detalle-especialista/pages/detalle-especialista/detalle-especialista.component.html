@@ -1,0 +1,317 @@
+<div class="row">
+
+<!--div para calendario-->
+<div class="col-md-4 col-lg-5 order-md-last">
+    <div id="calendar">
+        <div class="w-100">
+            <div class="sidebar-menu vue-affix affix" style="top: 0px; width: 463px; bottom: auto;">
+                <div data-v-6d6435bd class="calendar-desktop">
+                    <div>
+                        <div class="card card-shadow-2">
+                            <div class="card-header py-1 bg-primary">
+                                <div>
+                                    <h3 class="text-white mb-0">Agendar cita</h3>
+                                </div>
+                            </div>
+                            <div class="card-body pt-1 pb-0">
+                                <div class="pt-1">
+                                    <div>
+                                    <div class="d-flex">
+                                        <div class="mr-1"></div>
+                                        <div class="w-100 option-container">
+                                            <p class="d-flex justify-content-between mb-1">Selecciona una direccion
+                                                <a class="btn-link text-muted">Mostrar Mapa</a>
+                                            </p>
+                                            <div class="mb-2">
+                                                <div class="form-group">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--div seccion detalle doctor-->
+<div class="unified-doctor-content-column col-md-8 col-lg-7 order-md-first">
+    <div class="card card-shadow-1 mb-1">
+        <div class="card-body pb-0 pt-1">
+            <div class="unified-doctor-header mt-0 mt-sm-1 pt-1 pt-sm-0">
+                <div class="unified-doctor-header-info">
+                        <div class="media mb-1 pb-2 pb-md-1 align-items-stretch">
+                                <div >
+                                  
+                                    <img alt="Medico demo" src="/assets/images/user.png">
+                                </div>
+                                <div class="pr-2"></div>
+                                <div class="media-body d-flex flex-column overflow-hidden">
+                                    <div class="d-flex justify-content-between align-items-center mb-0-5">
+                                        <h1 class="h3 m-0">
+                                            <div class="unified-doctor-header-info__name">
+                                                <span>Dr.</span>
+                                                <span> {{especialista.nombre}}</span>
+                                            </div>
+                                        </h1>
+                                        <div class=" d-sm-block">
+                                            <div class="d-flex">
+                                                    <div class="button-save-doctor d-flex align-items-center p-0">
+                                                        <div class="d-flex mr-0-5"></div>
+                                                        <span>Guardar</span>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--seccion especialidad y ver mas-->
+                                    <h2 class="h4 text-muted font-weight-normal mb-0-5 d-flex">
+                                        <span class="text-truncate">{{especialista.especialidad}} </span>
+                                        <span class="text-nowrap">
+                                            <a href="" class="ml-0-5 text-muted"><u>Ver mas</u></a>
+                                        </span>
+                                    </h2>
+                                    <!--seccion cedula-->
+                                    <div class="text-muted small">No. de cédula:  {{especialista.cedula}} 
+                                    </div>
+                                    <!--seccion opiniones-->
+                                    <a href="" class="d-inline-block text-muted mb-0-5">
+                                        <u class="rating rating-lg">
+                                            <span>Opiniones</span>
+                                        </u>
+                                    </a>
+                                    <div class="d-sm-none mt-1"></div>
+                                    <!--seccion botones-->
+                                    <div class="d-none d-md-flex flex-wrap unified-doctor-header-buttons mt-auto">
+                                        <a role="button" class="btn btn-primary btn-sm-block btn-lg mt-1 mr-1">Agendar</a>
+                                        <div class="mt-1 mr-1">
+                                            <a href="" class="btn btn-light btn-lg  btn-block">Enviar mensaje</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <!--empieza otra seccion nav-->
+            <hr class="my-1">
+            <div class="nav-responsive">
+                <ul class="nav nav-tabs d-flex pb-0">
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active">
+                            consultorios
+                        </a>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active">
+                            Precios
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active">
+                            Opiniones
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active">
+                            Experiencia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--seccion de consultorio-->
+    <div class="tab-content unified-doctor-content">
+        <div class="tab-pane active in">
+            <div class="card card-shadow-1 mb-1">
+                <div class="card-header">
+                    <h3 class="flex-grow-1 mb-0">Consultorio</h3>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active">
+                            <div class="row">
+                                <div class="col-md-8 col-lg-8 col-xl-9">
+                                    <div></div>
+                                    <div class="m-0">
+                                        <div class="media">
+                                            <div class="pr-1 pb-1"></div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5 class="m-0">
+                                                        <span itemprop="postalCode" content="66238"></span>
+                                                        <span class="city" itemprop="addressLocality" content="Hermosillo"></span>
+                                                        <span class="province region" itemprop="addressRegion" content="Sonora"></span>
+			                                            <span itemprop="addressCountry" content="MX"></span>
+                                                        <span class="text-body">
+                                                            <span>{{especialista.consultorio}} </span>
+                                                            <a href="#" class="text-muted">San pedro garza garcia ,</a> 
+                                                            <a href="#" class="text-muted">Monterrey NL</a>
+                                                        </span>
+                                                       
+                                                    </h5>
+                                                    <span class="text-muted"> {{especialista.nombre}},{{especialista.especialidad}} </span>
+                                                </div>
+                                                <hr class="my-1">
+                                            </div>
+                                        </div>
+                                        <!--otra seccion solo atiende-->
+                                        <div class="check-your-insurance">
+                                            <div class="media m-0">
+                                                <div class="pr-1 pb-1"></div>
+                                                <div class="media-body"> 
+                                                    <p class="text-muted">
+                                                        Solo atiende pacientes privados (sin aseguradora) en esta dirección
+                                                    </p>
+                                                    <hr class="bg-gray-200 my-1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--fin otra seccion-->
+                                        <!--otra seccion niños-->
+                                        <div class="media m-0">
+                                            <div class="pr-1 pb-1"></div>
+                                            <div class="media-body text-muted">
+                                                Atiende a: <span>adultos, niños de cualquier edad</span>
+                                                <hr class="my-1">
+                                            </div>
+                                        </div>
+                                        <!--fin seccion niños-->
+                                        <!--otra seccion efectivo-->
+                                        <div class="media m-0">
+                                            <div class="pr-1 pb-1"></div>
+                                            <div class="media-body text-muted">
+                                                Efectivo <span>, transferencia</span>
+                                                <hr class="my-1">
+                                            </div>
+                                        </div>
+                                        <!--fin seccion efectivo-->
+
+                                        <!--otra seccion numero-->
+                                        <div class="media m-0">
+                                            <div class="pr-1 pb-1"></div>
+                                            <div class="media-body text-muted">
+                                                <span> 81 81 11...</span>
+                                                
+                                                <hr class="my-1">
+                                            </div>
+                                        </div>
+                                        <!--fin seccion numero-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--seccion experiencia-->
+            <div class="card card-shadow-1 mb-1">
+                <div class="card-header">
+                    <h3 class="flex-grow-1 mb-0">Experiencia</h3>
+                </div>
+                <div class="card-body">
+                    <div class="doctor-items">
+                           <div class="media">
+                               <div class="pr-1"></div>
+                               <div class="media-body">
+                                   <p class="mb-0-5">
+                                       <span class="d-flex flex-wrap align-items-center">
+                                           <span>Especialista en:</span>
+                                       </span>
+                                   </p>
+                                   <ul class="text-muted pl-2">
+                                        <li>Seguimiento dieta clinica 1</li>
+                                        <li>Seguimiento dieta clinica 2</li>
+                                        <li>Seguimiento dieta clinica 3</li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <hr class="my-1">
+                           <!--enfermedades tratadas-->
+                           <div class="media">
+                            <div class="pr-1"></div>
+                            <div class="media-body">
+                                <p class="mb-0-5">
+                                    <span class="d-flex flex-wrap align-items-center">
+                                        <span>Especialista en:</span>
+                                    </span>
+                                </p>
+                                <ul class="text-muted pl-2">
+                                     <li>Seguimiento dieta clinica 1</li>
+                                     <li>Seguimiento dieta clinica 2</li>
+                                     <li>Seguimiento dieta clinica 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                          <!--enfermedades tratadas-->
+
+                        <!--enfermedades tratadas-->
+                           <div class="media">
+                            <div class="pr-1"></div>
+                            <div class="media-body">
+                                <p class="mb-0-5">
+                                    <span class="d-flex flex-wrap align-items-center">
+                                        <span>Enfermedades Tratadas:</span>
+                                    </span>
+                                </p>
+                                <ul class="text-muted pl-2">
+                                     <li>Control de la diabetes</li>
+                                     <li>Control Peso Corporal</li>
+                                     <li>Control Gastritis</li>
+                                </ul>
+                            </div>
+                        </div>
+                          <!--enfermedades tratadas-->
+
+                             <!--formacion -->
+                          <div class="media">
+                            <div class="pr-1"></div>
+                            <div class="media-body">
+                                <p class="mb-0-5">
+                                    <span class="d-flex flex-wrap align-items-center">
+                                        <span>Formacion:</span>
+                                    </span>
+                                </p>
+                                <ul class="text-muted pl-2">
+                                     <li>Universidad de monterrey</li>
+                                     <li>Especialidad Hospital siglo XXL</li>
+                                     <li>Especialidad Hospital San jose Zambrano</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!--formacion -->
+                             <!--idiomas -->
+                             <div class="media">
+                                <div class="pr-1"></div>
+                                <div class="media-body">
+                                    <p class="mb-0-5">
+                                        <span class="d-flex flex-wrap align-items-center">
+                                            <span>Idiomas:</span>
+                                        </span>
+                                    </p>
+                                    <ul class="text-muted pl-2">
+                                         <li>Ingles, Frances, Italiano, Español</li>
+                                         
+                                    </ul>
+                                </div>
+                            </div>
+                             <!--Idiomas -->
+                    </div>
+                </div>
+            </div>
+            <!-- fin seccion experiencia-->
+        </div>
+    </div>
+</div>
+</div>
